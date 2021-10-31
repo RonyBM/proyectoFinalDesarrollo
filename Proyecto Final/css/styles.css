@@ -11299,11 +11299,12 @@ textarea.form-control-lg {
 .features-icons .features-icons-item .features-icons-icon i {
   font-size: 4.5rem;
 }
-
+/*Esta es la seccion para la imagen del index y del login*/
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  /*reemplazar el link por el de la imagen a utulizar*/
+  background: url("../assets/img/Amazon.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -11359,7 +11360,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/Amazon.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
