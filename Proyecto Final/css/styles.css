@@ -11303,7 +11303,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  /*reemplazar el link por el de la imagen a utulizar*/
+  /*reemplazar el link por el de la imagen a utilizar*/
   background: url("../assets/img/Amazon.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
