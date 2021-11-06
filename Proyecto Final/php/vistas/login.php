@@ -11,7 +11,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="../../inicio.php">Cotizador Amazon</a>
+            <a class="navbar-brand" href="../../index.php">Cotizador Amazon</a>
         </div>
     </nav>
     <div class="loginbox">

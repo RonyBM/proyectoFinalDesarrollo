@@ -30,7 +30,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Cotizador Amazon</a>
+        <a class="navbar-brand" href="index.php">Cotizador Amazon</a>
         <a class="btn btn-primary" href="php/vistas/login.php">Login</a>
       </div>
     </nav>
@@ -187,7 +187,7 @@
           <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item me-4">
-                <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                <a href="https://www.facebook.com/u.marianogalvez"><i class="bi-facebook fs-3"></i></a>
               </li>
               <li class="list-inline-item me-4">
                 <a href="#!"><i class="bi-twitter fs-3"></i></a>
