@@ -54,21 +54,21 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/jehovany.PNG" alt="..." />
+                        <img class="img-fluid rounded-circle mb-3" src="../../assets/img/jehovany.PNG" alt="..." />
                         <h5>Jehovany L. H.</h5>
                         <p class="font-weight-light mb-0">Colaborador del proyecto</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/jeffrey.png" alt="..." />
+                        <img class="img-fluid rounded-circle mb-3" src="../../assets/img/jeffrey.png" alt="..." />
                         <h5>Jeffrey Martínez</h5>
                         <p class="font-weight-light mb-0">Colaborador del proyecto</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="../assets/img/rony.png" alt="..." />
+                        <img class="img-fluid rounded-circle mb-3" src="../../assets/img/rony.png" alt="..." />
                         <h5>Rony Barán</h5>
                         <p class="font-weight-light mb-0">Colaborador del proyecto</p>
                     </div>
