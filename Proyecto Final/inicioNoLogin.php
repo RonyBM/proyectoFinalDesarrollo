@@ -1,13 +1,3 @@
-<?php
-session_start();
-include'php/controladores/validar.php';
-$usuario  = $_SESSION['usuario'];
-if(!isset($usuario)){
-  header("location:index.php");
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,11 +30,10 @@ if(!isset($usuario)){
     <!-- Navigation-->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="inicio.php">Cotizador Amazon</a>
-        <a class="btn btn-primary" href="php/controladores/cerrar_sesion.php">cerrar Sesion</a>
+        <a class="navbar-brand" href="inicioNoLogin.php">Cotizador Amazon</a>
+        <a class="btn btn-primary" href="index.php">Login</a>
       </div>
     </nav>
-    
     <!-- Masthead-->
     <header class="masthead">
       <div class="container position-relative">
@@ -52,7 +41,6 @@ if(!isset($usuario)){
           <div class="col-xl-6">
             <div class="text-center text-white">
               <!-- Page heading-->
-              <h1 class="mb-5">Bienvenido: <?php echo $usuario?></h1>
               <h1 class="mb-5">Cotiza tus productos de Amazon</h1>
               <!-- Signup form-->
               <!-- * * * * * * * * * * * * * * *-->
