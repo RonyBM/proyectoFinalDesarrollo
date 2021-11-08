@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../inicio.php">Cotizador Amazon</a>
+      <a class="btn btn-primary" href="../controladores/cerrar_sesion.php">cerrar Sesion</a>
+    </div>
+  </nav>
+  <header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <h1 class="mb-5">Selecciona la Tasa de cambio</h1>
+                    <div>
+                      <div>
+                        <input type="number">
+                        <select>
+                          <!-- <option value="currrency">Currency</option> -->
+                        </select>
+                      </div>
+                    
+                      <div>
+                        <input type="number">
+                        <select>
+                          <!-- <option value="currency">Currency</option> -->
+                        </select>
+                      </div>
+
+                      <a class="btn btn-primary" href="gestiton_datos.php">Validar</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Footer-->
+<footer class="footer bg-light">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+              <ul class="list-inline mb-2">
+                  <li class="list-inline-item">
+                      <a href="about.php">Sobre Nosotros</a>
+                      <a href="gestiton_datos.php">Gestión de datos</a>
+                  </li>
+              </ul>
+              <p class="text-muted small mb-4 mb-lg-0">
+                  &copy; Desarrollo Web 2021. Derechos Reservados.
+              </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+              <ul class="list-inline mb-0">
+                  <li class="list-inline-item me-4">
+                      <a href="https://www.facebook.com/u.marianogalvez"><i class="bi-facebook fs-3"></i></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+  
+  <script>
+    const select = document.querySelectorAll('select');
+    const input = document.querySelectorAll('input');
+    const API_URL = "http://api.exchangeratesapi.io/v1/latest?access_key=1d56a2fa6faf3697eecaa031bc951338";
+    let html = '';
+
+    async function currency() {
+      const res = await fetch(API_URL);
+      const data = await res.json();
+      const arrKeys = Object.keys(data.rates);
+      const rates = data.rates;
+      console.log(rates);
+      arrKeys.map(item => {
+        return html += `<option value=${item}>${item}</option>`;
+      });
+      //   console.log(html);
+      for (let i = 0; i < select.length; i++) {
+        select[i].innerHTML = html;
+      };
+
+      function convert(i, j) {
+        input[i].value = input[j].value * rates[select[i].value] / rates[select[j].value];
+      }
+
+
+      input[0].addEventListener('keyup', () => convert(1, 0));
+
+      input[1].addEventListener('keyup', () => convert(0, 1));
+
+      select[0].addEventListener('change', () => convert(1, 0))
+
+      select[1].addEventListener('change', () => convert(0, 1))
+    };
+
+    currency();
+  </script>
+</body>
+
+</html>
