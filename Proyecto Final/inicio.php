@@ -1,13 +1,3 @@
-<?php
-session_start();
-include'php/controladores/validar.php';
-$usuario  = $_SESSION['usuario'];
-if(!isset($usuario)){
-  header("location:index.php");
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,22 +42,12 @@ if(!isset($usuario)){
           <div class="col-xl-6">
             <div class="text-center text-white">
               <!-- Page heading-->
-              <h1 class="mb-5">Bienvenido: <?php echo $usuario?></h1>
               <h1 class="mb-5">Cotiza tus productos de Amazon</h1>
-              <!-- Signup form-->
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- * * SB Forms Contact Form * *-->
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- This form is pre-integrated with SB Forms.-->
-              <!-- To make this form functional, sign up at-->
-              <!-- https://startbootstrap.com/solution/contact-forms-->
-              <!-- to get an API token!-->
               <form
                 class="form-subscribe"
                 id="contactForm"
                 data-sb-form-api-token="API_TOKEN"
               >
-                <!-- Email address input-->
                 <div class="row">
                   <div class="col">
                     <input
@@ -190,6 +170,7 @@ if(!isset($usuario)){
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
                 <a href="php/vistas/about.php">Sobre Nosotros</a>
+                <a href="php/vistas/gestiton_datos.php">Gestión de datos</a>
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">
@@ -200,13 +181,7 @@ if(!isset($usuario)){
             <ul class="list-inline mb-0">
               <li class="list-inline-item me-4">
                 <a href="https://www.facebook.com/u.marianogalvez"><i class="bi-facebook fs-3"></i></a>
-              </li>
-              <li class="list-inline-item me-4">
-                <a href="#!"><i class="bi-twitter fs-3"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#!"><i class="bi-instagram fs-3"></i></a>
-              </li>
+              </li>              
             </ul>
           </div>
         </div>

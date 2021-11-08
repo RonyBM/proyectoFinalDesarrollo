@@ -25,8 +25,7 @@
             <input class="form-control form-control-sm" type="text" placeholder="Ingrese nombre de usuario" name="usuario" required>
 
             <!--PASSWORD-->
-            <label for="passwsord">Contaseña</label>
-            <input class="form-control form-control-sm" type="password" placeholder="Ingrese contraseña de usuario" name="pass" required>
+            <label for="passwsord">Contaseña</label>            <input class="form-control form-control-sm" type="password" placeholder="Ingrese contraseña de usuario" name="pass" required>
 
             <!--VALIDAR-->
             <input type="submit" value="Iniciar Sesión" name="btningresar">
