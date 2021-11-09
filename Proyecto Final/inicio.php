@@ -34,7 +34,6 @@
         <a class="btn btn-primary" href="php/controladores/cerrar_sesion.php">cerrar Sesion</a>
       </div>
     </nav>
-    
     <!-- Masthead-->
     <header class="masthead">
       <div class="container position-relative">

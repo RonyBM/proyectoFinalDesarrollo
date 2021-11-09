@@ -19,7 +19,6 @@
       </div>
     </section>   
     <section>
-
         <script src="./js/detalle.js"></script>
         
         <p class="text-center">El uso de este servicio para buscar para un producto en Amazon.</p>
