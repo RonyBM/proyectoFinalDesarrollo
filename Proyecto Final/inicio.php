@@ -48,8 +48,8 @@
                 id="contactForm"
                 data-sb-form-api-token="API_TOKEN"
               >
-                <div class="row">
-                  <div class="col">
+                <!-- <div class="row"> -->
+                  <!-- <div class="col">
                     <input
                       class="form-control form-control-lg"
                       id="emailAddress"
@@ -69,17 +69,18 @@
                     >
                       El link del producto es erroneo.
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-auto">
-                    <button
+                   <!--  <button
                       class="btn btn-primary btn-lg disabled"
                       id="submitButton"
                       type="submit"
                     >
                       Cotizar
-                    </button>
+                    </button> -->
+                    <a class="btn btn-primary" href="php/controladores/cotizacion.php">Cotizar</a>
                   </div>
-                </div>
+                <!-- </div> -->
                 <!-- Submit success message-->
                 <!---->
                 <!-- This is what your users will see when the form-->
