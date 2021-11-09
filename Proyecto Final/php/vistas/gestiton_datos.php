@@ -35,7 +35,7 @@
                         <!-- Page heading-->
                         <h1 class="mb-5">Opciones de Gestión</h1>
                         <form class="form-subscribe btn-lg" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <a class="btn btn-primary btn-lg" href="index.html">Tasa de Cambio</a>                             
+                        <a class="btn btn-primary btn-lg" href="tasa.html">Tasa de Cambio</a>                             
                         </form>
                     </div>
                 </div>

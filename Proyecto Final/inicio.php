@@ -77,7 +77,7 @@
                     >
                       Cotizar
                     </button> -->
-                    <a class="btn btn-primary" href="php/controladores/cotizacion.php">Cotizar</a>
+                    <a class="btn btn-primary" href="php/vistas/cotizacion.php">Cotizar</a>
                   </div>
                 <!-- </div> -->
                 <!-- Submit success message-->
