@@ -7,6 +7,13 @@
 </head>
 
 <body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="inicio.php">Cotizador Amazon</a>
+        <a class="btn btn-primary" href="php/controladores/cerrar_sesion.php">cerrar Sesion</a>
+      </div>
+    </nav>
   <main>
     <section class="jumbotron text-center">
       <div class="container">
